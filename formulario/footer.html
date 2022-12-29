@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            padding: 0px;
+        }
+
+        @media only screen and (min-width: 200px) AND (max-width: 400px) {
+
+            /* para tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            /* Para desktop: */
+            .col-1 {
+                width: 8.20%;
+            }
+
+            /*33*/
+            .col-2 {
+                width: 16.50%;
+            }
+
+            /*66*/
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background-color: #000;
+            color: #FFF;
+            padding: 0px;
+        }
+
+        .linea {
+            border-right-color: #FFF;
+            border-right-style: solid;
+            border-right-width: 3px;
+            text-align: center;
+        }
+
+        footer div.row {
+            padding: 15px 0;
+        }
+
+        footer div.row div {
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .social {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .social li {
+            display: inline-block;
+            width: 36px;
+            margin-left: 3px;
+        }
+
+        .margin35 {
+            margin: 35px auto;
+        }
+
+        .txt-reclamos {
+            max-height: 18px;
+        }
+
+        .margenes2 {
+            margin: 35px 0 0 0;
+        }
+
+        @media only screen and (min-width: 200px) AND (max-width: 400px) {
+            .linea {
+                border-bottom-color: #FFF;
+                border-bottom-style: dashed;
+                border-bottom-width: 3px;
+                border-right-color: none;
+                border-right-style: none;
+                border-right-width: none;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 200px) AND (max-width: 768px) {
+            .img-responsive-mercadolibre {
+                max-height: 100px !important;
+            }
+
+            .img-responsive-informar {
+                max-height: 25px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column" style="height:150px">
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black" >
+        <div class="container-fluid py-1">
+            <div class="row py-4 ">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 linea text-center"><img
+                        src="https://www.everwear.com.ar/assets/img/logo.png" alt="" class="margin35">
+
+                </div>
+                <div class="col-lg-2 col-md-12  mb-lg-0 linea text-center">
+
+                    <ul class="social mt-5">
+                        <li class="ml-0">
+                            <a href="https://www.linkedin.com/company/ever-wear" target="_blank"><img
+                                    src="icons/linkedin.png" class="img-responsive" alt="Linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCXKcYMyrbGe6bsPEN7scQcw" target="_blank"><img
+                                    src="icons/youtube.png" class="img-responsive" alt="Youtube"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/everwearsa" target="_blank"><img src="icons/facebook.png"
+                                    class="img-responsive" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/everwear.arg/" target="_blank"><img
+                                    src="icons/instagram.png" class="img-responsive" alt="Instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12  mb-lg-0 linea px-2 text-center">
+                    <a href="informe.html" target="_blank" class="">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4">
+                                <img src="icons/informe.png" style="display: unset;" height="100px" width="100px"
+                                    class="pull-right img-responsive ml-2 px-1" alt="everwear">
+                            </div>
+                            <div class="col-md-7 ">
+                                <h1 style="font-size: 1.2rem;text-align:left;margin-top:10px;color:white">INFORME DE
+                                    DEPÓSITOS
+                                    <br>TRANSFERENCIAS BANCARIAS</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-lg-0 text-center">
+                    <a href="reclamo.html" target="_blank">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4">
+                                <img src="icons/reclaim-yellow.png" style="display: unset;margin-left:25px"
+                                    height="100px" width="100px" class="pull-right img-responsive px-1" alt="everwear">
+                            </div>
+                            <div class="col-md-7">
+                                <h1 style="font-size: 1.8rem;text-align:left;margin-top:40px;margin-left:5px;color:white">
+                                    RECLAMOS</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- End -->
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+<a href="<?= URL_ADMIN ?>/inc/productos/exportarExcel.php" class='btn  btn-info'>Exportar Excel de productos</a>

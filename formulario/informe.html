@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .headForm {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        @media (min-width: 700px) {
+            .linea {
+                border-right-color: #f4cc07;
+                border-right-style: solid;
+                border-right-width: 3px;
+                text-align: center;
+            }
+        }
+
+        .margin35 {
+            margin: 35px auto;
+        }
+
+        .border-box {
+            border-radius: unset !important;
+            background-color: #f4cc07 !important;
+        }
+
+        .border-control {
+            border-radius: unset !important;
+            background-color: #e6e6e6 !important;
+        }
+
+        .icon-label {
+            height: 25px;
+            width: 25px;
+        }
+
+        input[type=file]::-webkit-file-upload-button {
+            border: 2px solid #f4cd07b6;
+            font-weight: 600;
+            padding: .2em .4em;
+            border-radius: .2em;
+            background-color: #f4cc07;
+            transition: 1s;
+        }
+
+        input[type=file]::file-selector-button {
+            border: 2px solid #f4cd07b6;
+            font-weight: 600;
+            padding: .2em .4em;
+            border-radius: .2em;
+            background-color: #f4cc07;
+            transition: 1s;
+        }
+
+        input[type=file]::-webkit-file-upload-button:hover {
+            background-color: #f4cc07;
+            border: 2px solid #000;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #f4cc07;
+            border: 2px solid #000;
+        }
+
+
+
+        @media screen and (max-width: 700px) {
+            .hidden-mobile {
+                display: none;
+            }
+
+            .pd-mobile {
+                padding: 1rem !important;
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <div class="headForm">
+        <div class="row">
+            <div class="col-md-5">
+                <div class=" linea margin35">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="icons/informe.png" style="display: unset;" class="pull-right img-responsive"
+                                alt="everwear">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 style="font-size: 1.5rem;text-align:left;margin-top:40px">INFORME DE DEPÓSITOS
+                                <br>TRANSFERENCIAS BANCARIAS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h5>Por favor complete y envíe el siguiente formulario.<br>Un asesor de nuestra empresa lo analizará y
+                    le devolverá una pronta respuesta.</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <!-- <form action="https://server.com/everwear/formulario/informe.php" enctype="multipart/form-data" method="POST"> -->
+    <form action="https://www.everwear.com.ar/formulario/informe.php" enctype="multipart/form-data" method="POST">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="col-12">
+                    <h3 class="ml-5 mt-2 font-weight-bold">
+                        Datos de su Empresa
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label" src="icons/user.png"
+                                    alt=""></div>
+                        </div>
+                        <input name="nombre" type="text" class="form-control font-weight-bold pl-4 border-control"
+                            id="inlineFormInputGroup" placeholder="Nombre y Apellido, Razón Social o Número de Cliente"
+                            required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label" src="icons/email.png"
+                                    alt=""></div>
+                        </div>
+                        <input name="email" type="email" class="form-control font-weight-bold pl-4 border-control"
+                            id="inlineFormInputGroup" placeholder="E-mail" required>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <h3 class="ml-5 mt-2 font-weight-bold">
+                        Datos de su Depósito o trasferencia
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label"
+                                    src="icons/informeAlert.png"></div>
+                            <div class="input-group-prepend hidden-mobile">
+                                <span class="form-control font-weight-bold pl-4 border-control">Fecha de Deposito o
+                                    Trasferencia Electrónica</span>
+                            </div>
+                        </div>
+
+                        <input name="fecha" type="date" class="form-control font-weight-bold pl-4 border-control"
+                            id="inlineFormInputGroup" placeholder="Fecha de Depósito o trasferencia" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label"
+                                    src="icons/informeAlert.png"></div>
+                        </div>
+                        <input name="banco" type="text" class="form-control font-weight-bold pl-4 border-control"
+                            id="inlineFormInputGroup" placeholder="Banco y cuenta corriente en que se deposita"
+                            required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label"
+                                    src="icons/informeAlert.png"></div>
+                        </div>
+                        <input name="importe" type="text" class="form-control font-weight-bold pl-4 border-control"
+                            id="inlineFormInputGroup" placeholder="Importe" required>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control" style="height: 120px;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label"
+                                    src="icons/informeAlert.png"></div>
+                        </div>
+                        <div class="form-control pl-4 border-control" style="height: 120px;">
+                            <h5 class="font-weight-bold">Identifique:</h5>
+                            <div class="form-check">
+                                <input name="valores" class="form-check-input" type="checkbox" value="Valores"
+                                    id="valores" data-toggle='collapse' data-target='#collapsediv1' onclick="">
+                                <label class="form-check-label font-weight-bold" for="valores">
+                                    Valores
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input name="echeq" class="form-check-input" type="checkbox" value="Echeq" id="echeq">
+                                <label class="form-check-label font-weight-bold" for="echeq">
+                                    Echeq
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="efectivo" class="form-check-input" type="checkbox" value="Efectivo"
+                                    id="efectivo">
+                                <label class="form-check-label font-weight-bold" for="efectivo">
+                                    Efectivo
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id='collapsediv1' class='collapse '>
+                    <div class="col-12">
+                        <div class="input-group mb-2 border-control">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text border-box"><img class="icon-label"
+                                        src="icons/informeAlert.png"></div>
+                            </div>
+                            <div class="form-control font-weight-bold pl-4 border-control">Ingrese el importe de los
+                                valores:
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor1" id="valor1" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor2" id="valor2" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor3" id="valor3" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor4" id="valor4" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor5" id="valor5" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 col-xs-6  py-1 px-4">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">$</span>
+                                        </div>
+                                        <input type="text" name="valor6" id="valor6" class="form-control"
+                                            placeholder="Ingrese Importe">
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="input-group mb-2 border-control">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text border-box"><img class="icon-label"
+                                    src="icons/informeAlert.png"></div>
+                        </div>
+                        <textarea class="form-control font-weight-bold pl-4 border-control" name="observacion"
+                            id="observacion" cols="30" rows="2" placeholder="Observaciones"></textarea>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+
+                <div class="input-group mb-2 border-control">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text border-box" id="inputGroupFileAddon01"><img class="icon-label"
+                                src="icons/informeAlert.png"></span>
+
+                        <span class="font-weight-bold mt-3 pl-4 text-muted ">Adjuntar Archivos y/o imágenes</span>
+                    </div>
+                    <div class="form-group mt-3 pl-4 pd-mobile">
+                        <input type="file" data-browse="Archivos y/o imágenes" id="file" name="files[]"
+                            multiple="multiple" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="headForm mt-4">
+            <button type="submit" class="btn btn-lg btn-block headForm" style="color: #f4cc07;">
+                <h2><img src="icons/paper.png" alt="" style="display: unset;">Enviar Informe</h2>
+            </button>
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

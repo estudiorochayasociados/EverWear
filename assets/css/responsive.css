@@ -1,0 +1,7 @@
+@media (min-width: 768px){
+    .justify-slider-content{
+        -webkit-box-pack: initial!important;
+        -ms-flex-pack: initial!important;
+        justify-content: initial!important;
+    }
+}
